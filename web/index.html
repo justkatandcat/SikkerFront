@@ -46,6 +46,29 @@ and open the template in the editor.
                 display: none;
                 
             }
+            
+            input[type=text] {
+                margin-top: 15px;
+                margin-left: 300px;
+                float: left;
+                width: 130px;
+                height: 20px;
+                border: .5px solid #ccc;
+                border-radius: 4px;
+                font-size: 12px;
+                background-image: url('img/searchicon.png');
+                background-position: 5px 5px; 
+                background-repeat: no-repeat;
+                padding: 12px 20px 12px 40px;
+                -webkit-transition: width 0.4s ease-in-out;
+                transition: width 0.4s ease-in-out;
+                
+            }
+
+            /* When the input field gets focus, change its width to 19% */
+            input[type=text]:focus {
+                width: 19%;
+            }
         </style>
         <script>
             
@@ -70,9 +93,11 @@ and open the template in the editor.
             <a onclick="inicio();">Home</a>
             <a onclick="about();">About</a>
             <a onclick="bintoop();">Bintoop</a>
-            <div style="float: right;">
+            <input type="text" name="search" placeholder="Search..">
+            <div style="float: right; margin-right: 65px;">
             <a onclick="login();">Log in</a>
             </div>
+            
         </div>
         
         <div>
