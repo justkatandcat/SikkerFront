@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>    
+  <script>
+
+  </script>
+  <style>
+      .hero-text {
+          text-align: center;
+          position: absolute;
+          top: 45%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: white;
+          font-size: 70px;
+      }
+      .hero-btn {
+          text-align: center;
+          position: absolute;
+          top: 60%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: black;
+          font-size: 20px;
+      }
+      .button {
+          border-radius: 5px;
+          background-color: #43B61E;
+          border: none;
+          color: #FFFFFF;
+          text-align: center;
+          font-size: 18px;
+          padding: 20px;
+          width: 200px;
+          transition: all 0.5s;
+          cursor: pointer;
+          margin: 5px;
+      }
+
+      .button span {
+          cursor: pointer;
+          display: inline-block;
+          position: relative;
+          transition: 0.5s;
+      }
+
+      .button span:after {
+          content: '\00bb';
+          position: absolute;
+          opacity: 0;
+          top: 0;
+          right: -20px;
+          transition: 0.5s;
+      }
+
+      .button:hover span {
+          padding-right: 25px;
+      }
+
+      .button:hover span:after {
+          opacity: 1;
+          right: 0;
+      }
+  </style>
+  
+</head>
+<body>
+
+<div class="container">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img src="img/lk5.png" alt="The first security app in Mexico" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="img/lk4.jpg" alt="Sikker 2" style="width:100%;">
+        
+      </div>
+    
+      <div class="item">
+        <img src="img/lk6.jpg" alt="Sikker 3" style="width:100%;">
+        <div class="hero-text">
+            <h1>Sikker</h1>
+            <h3>Safety first</h3>
+        </div>
+        <div class="hero-btn">
+            <button class="button"><span id="btnc"><a href="signup.html"><font color=white>Sign up now</font></a></span></button>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

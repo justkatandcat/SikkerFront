@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+    <head>
+        <title>Sikker</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <style>
+            .topnav {
+                background-color: #fff;
+                overflow: hidden;
+                width:80%;
+                height: 30%;
+                float: left;
+                margin-top: 15px;
+                margin-left: 30px;
+                margin-bottom: 20px;
+                
+            }
+
+            /* Style the links inside the navigation bar */
+            .topnav a {
+                float: left;
+                display: block;
+                color: #000;
+                text-align: center;
+                padding: 13px 35px;
+                text-decoration: none;
+                font-size: 20px;
+                cursor: pointer;
+            }
+
+            /* Change the color of links on hover */
+            .topnav a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+            /* Hide the link that should open and close the topnav on small screens */
+            .topnav .icon {
+                display: none;
+                
+            }
+        </style>
+        <script>
+            
+          function inicio() {
+                f1.src = "carrusel.html";
+            } 
+            function about() {
+                f1.src = "about.html";
+            }
+          function bintoop() {
+                f1.src = "bintoop.html";
+            }   
+          function login() {
+                f1.src = "login.html";
+            }
+        </script>
+    </head>
+    <body onload="inicio()">
+        
+        <img src="img/lk2.png" alt="Sikker" style="float: left; margin-left: 40px; margin-top: 15px; cursor: pointer;" onclick="inicio();"> 
+        <div class="topnav" id="myTopnav">
+            <a onclick="inicio();">Home</a>
+            <a onclick="about();">About</a>
+            <a onclick="bintoop();">Bintoop</a>
+            <div style="float: right;">
+            <a onclick="login();">Log in</a>
+            </div>
+        </div>
+        
+        <div>
+        <iframe style="height: 100%; border: 0; left: 0px; position: absolute; top: 12%; width: 100%;" id="f1">    
+        </iframe>
+        </div>
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
